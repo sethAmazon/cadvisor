@@ -1,15 +1,15 @@
-module github.com/google/cadvisor/cmd
+module github.com/sethAmazon/cadvisor/cmd
 
 go 1.16
 
 // Record that the cmd module requires the cadvisor library module.
-// The github.com/google/cadvisor/cmd module is built using the Makefile
-// from a clone of the github.com/google/cadvisor repository, so we
+// The github.com/sethAmazon/cadvisor/cmd module is built using the Makefile
+// from a clone of the github.com/sethAmazon/cadvisor repository, so we
 // always use the relative local source rather than specifying a module version.
-require github.com/google/cadvisor v0.48.0
+require github.com/sethAmazon/cadvisor v0.48.0
 
-// Use the relative local source of the github.com/google/cadvisor library to build
-replace github.com/google/cadvisor => ../
+// Use the relative local source of the github.com/sethAmazon/cadvisor library to build
+replace github.com/sethAmazon/cadvisor => ../
 
 replace github.com/docker/distribution => github.com/docker/distribution v2.8.1+incompatible
 

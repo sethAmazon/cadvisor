@@ -30,8 +30,8 @@ trap delete EXIT INT
 
 function run_tests() {
   BUILD_CMD="env GOOS=linux GO_FLAGS='$GO_FLAGS' ./build/build.sh amd64 && \
-    env GOOS=linux GOFLAGS='$GO_FLAGS' go test -c github.com/google/cadvisor/integration/tests/api && \
-    env GOOS=linux GOFLAGS='$GO_FLAGS' go test -c github.com/google/cadvisor/integration/tests/healthz"
+    env GOOS=linux GOFLAGS='$GO_FLAGS' go test -c github.com/sethAmazon/cadvisor/integration/tests/api && \
+    env GOOS=linux GOFLAGS='$GO_FLAGS' go test -c github.com/sethAmazon/cadvisor/integration/tests/healthz"
 
   if [ "$BUILD_PACKAGES" != "" ]; then
     BUILD_CMD="echo 'deb http://deb.debian.org/debian buster-backports main'>/etc/apt/sources.list.d/buster.list && \
@@ -40,8 +40,8 @@ function run_tests() {
     $BUILD_CMD"
   fi
   docker run --rm \
-    -w /go/src/github.com/google/cadvisor \
-    -v ${PWD}:/go/src/github.com/google/cadvisor \
+    -w /go/src/github.com/sethAmazon/cadvisor \
+    -v ${PWD}:/go/src/github.com/sethAmazon/cadvisor \
     golang:"$GOLANG_VERSION-buster" \
     bash -c "$BUILD_CMD"
 
@@ -52,8 +52,8 @@ function run_tests() {
 
   mkdir ${TMPDIR}/docker-graph
   docker run --rm \
-    -w /go/src/github.com/google/cadvisor \
-    -v ${ROOT}:/go/src/github.com/google/cadvisor \
+    -w /go/src/github.com/sethAmazon/cadvisor \
+    -v ${ROOT}:/go/src/github.com/sethAmazon/cadvisor \
     ${EXTRA_DOCKER_OPTS} \
     --privileged \
     --cap-add="sys_admin" \

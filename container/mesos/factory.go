@@ -24,11 +24,11 @@ import (
 
 	"k8s.io/klog/v2"
 
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/watcher"
+	"github.com/sethAmazon/cadvisor/container"
+	"github.com/sethAmazon/cadvisor/container/libcontainer"
+	"github.com/sethAmazon/cadvisor/fs"
+	info "github.com/sethAmazon/cadvisor/info/v1"
+	"github.com/sethAmazon/cadvisor/watcher"
 )
 
 var MesosAgentAddress = flag.String("mesos_agent", "127.0.0.1:5051", "Mesos agent address")

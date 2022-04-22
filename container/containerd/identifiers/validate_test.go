@@ -33,7 +33,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/cadvisor/container/containerd/errdefs"
+	"github.com/sethAmazon/cadvisor/container/containerd/errdefs"
 )
 
 func TestValidIdentifiers(t *testing.T) {

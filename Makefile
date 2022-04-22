@@ -44,15 +44,15 @@ docker-test: container-test
 
 test-integration:
 	GO_FLAGS=$(or $(GO_FLAGS),-race) ./build/build.sh
-	$(GO_TEST) -c github.com/google/cadvisor/integration/tests/api
-	$(GO_TEST) -c github.com/google/cadvisor/integration/tests/healthz
+	$(GO_TEST) -c github.com/sethAmazon/cadvisor/integration/tests/api
+	$(GO_TEST) -c github.com/sethAmazon/cadvisor/integration/tests/healthz
 	@./build/integration.sh
 
 docker-test-integration:
 	@./build/integration-in-docker.sh
 
 test-runner:
-	@$(GO) build github.com/google/cadvisor/integration/runner
+	@$(GO) build github.com/sethAmazon/cadvisor/integration/runner
 
 tidy:
 	@$(GO) mod tidy
@@ -61,7 +61,7 @@ tidy:
 format:
 	@echo ">> formatting code"
 	@# goimports is a superset of gofmt.
-	@goimports -w -local github.com/google/cadvisor .
+	@goimports -w -local github.com/sethAmazon/cadvisor .
 
 build: assets
 	@echo ">> building binaries"
@@ -79,7 +79,7 @@ docker-%:
 	@docker build -t cadvisor:$(shell git rev-parse --short HEAD) -f deploy/Dockerfile$(Dockerfile_tag) .
 
 docker-build:
-	@docker run --rm -w /go/src/github.com/google/cadvisor -v ${PWD}:/go/src/github.com/google/cadvisor golang:1.18 make build
+	@docker run --rm -w /go/src/github.com/sethAmazon/cadvisor -v ${PWD}:/go/src/github.com/sethAmazon/cadvisor golang:1.18 make build
 
 presubmit: lint
 	@echo ">> checking go mod tidy"

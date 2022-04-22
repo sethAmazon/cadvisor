@@ -1,4 +1,4 @@
-module github.com/google/cadvisor
+module github.com/sethAmazon/cadvisor
 
 go 1.16
 

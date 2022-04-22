@@ -28,7 +28,7 @@ import (
 	"path"
 	"strings"
 
-	v1 "github.com/google/cadvisor/info/v1"
+	v1 "github.com/sethAmazon/cadvisor/info/v1"
 
 	"k8s.io/klog/v2"
 )

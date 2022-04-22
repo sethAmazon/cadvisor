@@ -25,9 +25,9 @@ import (
 	tasksapi "github.com/containerd/containerd/api/services/tasks/v1"
 	versionapi "github.com/containerd/containerd/api/services/version/v1"
 	ptypes "github.com/gogo/protobuf/types"
-	"github.com/google/cadvisor/container/containerd/containers"
-	"github.com/google/cadvisor/container/containerd/errdefs"
-	"github.com/google/cadvisor/container/containerd/pkg/dialer"
+	"github.com/sethAmazon/cadvisor/container/containerd/containers"
+	"github.com/sethAmazon/cadvisor/container/containerd/errdefs"
+	"github.com/sethAmazon/cadvisor/container/containerd/pkg/dialer"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/backoff"
 )

@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/google/cadvisor/stats"
+	"github.com/sethAmazon/cadvisor/stats"
 
 	"github.com/mindprince/gonvml"
 	"github.com/stretchr/testify/assert"

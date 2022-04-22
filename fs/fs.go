@@ -34,8 +34,8 @@ import (
 	zfs "github.com/mistifyio/go-zfs"
 	mount "github.com/moby/sys/mountinfo"
 
-	"github.com/google/cadvisor/devicemapper"
-	"github.com/google/cadvisor/utils"
+	"github.com/sethAmazon/cadvisor/devicemapper"
+	"github.com/sethAmazon/cadvisor/utils"
 
 	"k8s.io/klog/v2"
 )

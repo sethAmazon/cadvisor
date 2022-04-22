@@ -18,7 +18,7 @@ import (
 	"testing"
 
 	"github.com/containerd/typeurl"
-	"github.com/google/cadvisor/container/containerd/containers"
+	"github.com/sethAmazon/cadvisor/container/containerd/containers"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/stretchr/testify/assert"
 )

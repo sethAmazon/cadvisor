@@ -38,8 +38,8 @@ import (
 	"golang.org/x/sys/unix"
 	"k8s.io/klog/v2"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/stats"
+	info "github.com/sethAmazon/cadvisor/info/v1"
+	"github.com/sethAmazon/cadvisor/stats"
 )
 
 type pmu struct {

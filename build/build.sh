@@ -22,7 +22,7 @@ BUILD_DATE=${BUILD_DATE:-$( date +%Y%m%d-%H:%M:%S )}
 VERBOSE=${VERBOSE:-}
 GOARCH=$1
 
-repo_path="github.com/google/cadvisor"
+repo_path="github.com/sethAmazon/cadvisor"
 
 version=$( git describe --tags --dirty --abbrev=14 | sed -E 's/-([0-9]+)-g/.\1+/' )
 revision=$( git rev-parse --short HEAD 2> /dev/null || echo 'unknown' )
@@ -50,7 +50,7 @@ if [ -n "$VERBOSE" ]; then
   echo "Building with -ldflags $ldflags"
 fi
 
-# Since github.com/google/cadvisor/cmd is a submodule, we must build from inside that directory
+# Since github.com/sethAmazon/cadvisor/cmd is a submodule, we must build from inside that directory
 output_file="$PWD/cadvisor"
 pushd cmd > /dev/null
 if [ -z "$GOARCH" ]

@@ -2,7 +2,7 @@
 
 ## 1. Send Release PR
 
-Example: https://github.com/google/cadvisor/pull/1281
+Example: https://github.com/sethAmazon/cadvisor/pull/1281
 
 Add release notes to [CHANGELOG.md](../../CHANGELOG.md)
 
@@ -64,10 +64,10 @@ $ docker push gcr.io/cadvisor/cadvisor:$PATCH_VERSION
 
 ## 5. Cut the release
 
-Go to https://github.com/google/cadvisor/releases and click "Draft a new release"
+Go to https://github.com/sethAmazon/cadvisor/releases and click "Draft a new release"
 
 - "Tag version" and "Release title" should be preceded by 'v' and then the version. Select the tag pushed in step 2.b
-- Copy an old release as a template (e.g. github.com/google/cadvisor/releases/tag/v0.23.1)
+- Copy an old release as a template (e.g. github.com/sethAmazon/cadvisor/releases/tag/v0.23.1)
 - Body should start with release notes (from CHANGELOG.md)
 - Next is the Docker image: `gcr.io/cadvisor/cadvisor:$VERSION`
 - Next are the binary hashes (from step 3)

@@ -18,8 +18,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/utils/cloudinfo"
+	info "github.com/sethAmazon/cadvisor/info/v1"
+	"github.com/sethAmazon/cadvisor/utils/cloudinfo"
 )
 
 const (

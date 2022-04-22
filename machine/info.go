@@ -24,12 +24,12 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/google/cadvisor/fs"
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/nvm"
-	"github.com/google/cadvisor/utils/cloudinfo"
-	"github.com/google/cadvisor/utils/sysfs"
-	"github.com/google/cadvisor/utils/sysinfo"
+	"github.com/sethAmazon/cadvisor/fs"
+	info "github.com/sethAmazon/cadvisor/info/v1"
+	"github.com/sethAmazon/cadvisor/nvm"
+	"github.com/sethAmazon/cadvisor/utils/cloudinfo"
+	"github.com/sethAmazon/cadvisor/utils/sysfs"
+	"github.com/sethAmazon/cadvisor/utils/sysinfo"
 
 	"k8s.io/klog/v2"
 )

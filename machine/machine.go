@@ -27,10 +27,10 @@ import (
 	"strconv"
 	"strings"
 
-	info "github.com/google/cadvisor/info/v1"
-	"github.com/google/cadvisor/utils"
-	"github.com/google/cadvisor/utils/sysfs"
-	"github.com/google/cadvisor/utils/sysinfo"
+	info "github.com/sethAmazon/cadvisor/info/v1"
+	"github.com/sethAmazon/cadvisor/utils"
+	"github.com/sethAmazon/cadvisor/utils/sysfs"
+	"github.com/sethAmazon/cadvisor/utils/sysinfo"
 
 	"k8s.io/klog/v2"
 

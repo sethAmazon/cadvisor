@@ -25,9 +25,9 @@ import (
 
 	inotify "k8s.io/utils/inotify"
 
-	"github.com/google/cadvisor/container/common"
-	"github.com/google/cadvisor/container/libcontainer"
-	"github.com/google/cadvisor/watcher"
+	"github.com/sethAmazon/cadvisor/container/common"
+	"github.com/sethAmazon/cadvisor/container/libcontainer"
+	"github.com/sethAmazon/cadvisor/watcher"
 
 	"k8s.io/klog/v2"
 )

@@ -20,9 +20,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/google/cadvisor/container"
-	info "github.com/google/cadvisor/info/v1"
-	v2 "github.com/google/cadvisor/info/v2"
+	"github.com/sethAmazon/cadvisor/container"
+	info "github.com/sethAmazon/cadvisor/info/v1"
+	v2 "github.com/sethAmazon/cadvisor/info/v2"
 
 	"github.com/prometheus/client_golang/prometheus"
 	"k8s.io/klog/v2"

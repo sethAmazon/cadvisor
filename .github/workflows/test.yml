@@ -50,4 +50,4 @@ jobs:
       if: failure()
       with:
         name: cadvisor.log
-        path: ${{ github.workspace }}/go/src/github.com/google/cadvisor/cadvisor.log
+        path: ${{ github.workspace }}/go/src/github.com/sethAmazon/cadvisor/cadvisor.log

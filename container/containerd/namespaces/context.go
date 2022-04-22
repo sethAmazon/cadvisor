@@ -33,9 +33,9 @@ import (
 	"context"
 	"os"
 
-	"github.com/google/cadvisor/container/containerd/errdefs"
-	"github.com/google/cadvisor/container/containerd/identifiers"
 	"github.com/pkg/errors"
+	"github.com/sethAmazon/cadvisor/container/containerd/errdefs"
+	"github.com/sethAmazon/cadvisor/container/containerd/identifiers"
 )
 
 const (

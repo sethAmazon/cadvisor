@@ -40,8 +40,8 @@ package identifiers
 import (
 	"regexp"
 
-	"github.com/google/cadvisor/container/containerd/errdefs"
 	"github.com/pkg/errors"
+	"github.com/sethAmazon/cadvisor/container/containerd/errdefs"
 )
 
 const (

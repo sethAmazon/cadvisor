@@ -18,8 +18,8 @@ package install
 import (
 	"k8s.io/klog/v2"
 
-	"github.com/google/cadvisor/container"
-	"github.com/google/cadvisor/container/containerd"
+	"github.com/sethAmazon/cadvisor/container"
+	"github.com/sethAmazon/cadvisor/container/containerd"
 )
 
 func init() {

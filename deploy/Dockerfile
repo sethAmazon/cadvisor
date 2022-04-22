@@ -23,8 +23,8 @@ RUN git clone -b v02.00.00.3820 https://github.com/intel/ipmctl/ && \
     make -j all && \
     make install
 
-ADD . /go/src/github.com/google/cadvisor
-WORKDIR /go/src/github.com/google/cadvisor
+ADD . /go/src/github.com/sethAmazon/cadvisor
+WORKDIR /go/src/github.com/sethAmazon/cadvisor
 
 ENV GOROOT /usr/lib/go
 ENV GOPATH /go
@@ -43,7 +43,7 @@ RUN apk --no-cache add libc6-compat device-mapper findutils zfs ndctl && \
 # Grab cadvisor,libpfm4 and libipmctl from "build" container.
 COPY --from=build /usr/local/lib/libpfm.so* /usr/local/lib/
 COPY --from=build /usr/local/lib/libipmctl.so* /usr/local/lib/
-COPY --from=build /go/src/github.com/google/cadvisor/cadvisor /usr/bin/cadvisor
+COPY --from=build /go/src/github.com/sethAmazon/cadvisor/cadvisor /usr/bin/cadvisor
 
 EXPOSE 8080
 

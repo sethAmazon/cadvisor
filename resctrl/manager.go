@@ -24,8 +24,8 @@ import (
 
 	"k8s.io/klog/v2"
 
-	"github.com/google/cadvisor/container/raw"
-	"github.com/google/cadvisor/stats"
+	"github.com/sethAmazon/cadvisor/container/raw"
+	"github.com/sethAmazon/cadvisor/stats"
 )
 
 type Manager interface {

@@ -4,7 +4,7 @@ cAdvisor uses [Kustomize](https://github.com/kubernetes-sigs/kustomize) to manag
 
 ## Usage
 
-Pick a [cAdvisor release](https://github.com/google/cadvisor/releases)
+Pick a [cAdvisor release](https://github.com/sethAmazon/cadvisor/releases)
 ```
 VERSION=v0.42.0
 ```

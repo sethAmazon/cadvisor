@@ -23,8 +23,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	info "github.com/google/cadvisor/info/v1"
-	v2 "github.com/google/cadvisor/info/v2"
+	info "github.com/sethAmazon/cadvisor/info/v1"
+	v2 "github.com/sethAmazon/cadvisor/info/v2"
 )
 
 func BenchmarkListDirectories(b *testing.B) {

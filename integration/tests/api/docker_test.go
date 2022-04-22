@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	info "github.com/google/cadvisor/info/v1"
-	v2 "github.com/google/cadvisor/info/v2"
-	"github.com/google/cadvisor/integration/framework"
+	info "github.com/sethAmazon/cadvisor/info/v1"
+	v2 "github.com/sethAmazon/cadvisor/info/v2"
+	"github.com/sethAmazon/cadvisor/integration/framework"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

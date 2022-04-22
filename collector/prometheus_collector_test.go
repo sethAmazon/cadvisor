@@ -24,8 +24,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	containertest "github.com/google/cadvisor/container/testing"
-	v1 "github.com/google/cadvisor/info/v1"
+	containertest "github.com/sethAmazon/cadvisor/container/testing"
+	v1 "github.com/sethAmazon/cadvisor/info/v1"
 )
 
 func TestPrometheus(t *testing.T) {
