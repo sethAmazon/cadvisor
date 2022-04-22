@@ -6,7 +6,7 @@ go 1.16
 // The github.com/sethAmazon/cadvisor/cmd module is built using the Makefile
 // from a clone of the github.com/sethAmazon/cadvisor repository, so we
 // always use the relative local source rather than specifying a module version.
-require github.com/sethAmazon/cadvisor v0.48.0
+require github.com/sethAmazon/cadvisor v0.44.1
 
 // Use the relative local source of the github.com/sethAmazon/cadvisor library to build
 replace github.com/sethAmazon/cadvisor => ../
