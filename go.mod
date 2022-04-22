@@ -2,9 +2,12 @@ module github.com/google/cadvisor
 
 go 1.16
 
+replace github.com/docker/distribution => github.com/docker/distribution v2.8.1+incompatible
+
 require (
 	cloud.google.com/go v0.54.0
 	github.com/Microsoft/go-winio v0.4.15
+	github.com/Rican7/retry v0.1.1-0.20160712041035-272ad122d6e5
 	github.com/aws/aws-sdk-go v1.35.24
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/containerd/containerd v1.4.12
@@ -18,6 +21,7 @@ require (
 	github.com/gogo/protobuf v1.3.2
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/karrick/godirwalk v1.16.1
+	github.com/mesos/mesos-go v0.0.7-0.20180413204204-29de6ff97b48
 	github.com/mindprince/gonvml v0.0.0-20190828220739-9ebdce4bb989
 	github.com/mistifyio/go-zfs v2.1.2-0.20190413222219-f784269be439+incompatible
 	github.com/moby/sys/mountinfo v0.5.0
@@ -28,6 +32,7 @@ require (
 	github.com/opencontainers/runc v1.1.0
 	github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417
 	github.com/pkg/errors v0.9.1
+	github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7 // indirect
 	github.com/prometheus/client_golang v1.7.1
 	github.com/prometheus/client_model v0.2.0
 	github.com/prometheus/common v0.10.0
